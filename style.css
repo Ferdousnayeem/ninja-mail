@@ -25,6 +25,11 @@ body {
   letter-spacing: 2px;
 }
 
+.button-3 {
+  border: none;
+  padding: 14px 15px;
+}
+
 .button:hover {
   cursor: pointer;
 }
@@ -63,8 +68,8 @@ body {
 .hero-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 25px 0px;
-  padding: 25px 0px;
+  margin: 25px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
 }
 
 .hero-text {
@@ -74,15 +79,16 @@ body {
 }
 
 .buttons {
-    display: flex;
-    float: left;
-    justify-content: space-around;
-    padding-right: 200px;
-    margin: 0px;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  padding-right: 150px;
+  margin: 0px;
 }
 
 .try-now {
-    margin-right: 40px;
+  margin-right: 40px;
+  padding: 10px 30px;
 }
 
 .image-size {
@@ -98,4 +104,197 @@ body {
 
 .text-transform {
   text-transform: capitalize;
+}
+
+.middle-section {
+  background-color: #f7f7f7;
+  padding: 120px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.middle-part {
+  background-image: url(./images/recharge.jpg);
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.middle-part h1 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+}
+
+.service-section {
+  background-color: #CAEAC7;
+  margin: 0;
+  padding: 30px 0px;
+}
+
+.service-section h1, .customers-section h1 {
+  margin: 0;
+  padding: 50px; 
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;  
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.card {
+  margin: 10px;
+  background-color: #f7f7f7;
+  width: 320px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.details {
+  padding: 25px;
+  font-size: 14px;
+}
+
+.details a{
+  text-decoration: none;
+  color: #4ba87d;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+.customers-section {
+  padding: 20px;
+}
+
+.customers-section h1 {
+  padding-top: 120px;
+}
+
+.customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer {
+  font-family: "Raleway", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 340px;
+  height: 240px;
+  display:flex;
+  align-items: flex-end;
+  color: #fff;
+  margin: 0px 10px;
+}
+
+.customer-one {
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer1.jpg);
+}
+
+.customer-two {
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer2.jpg);
+}
+
+.customer-three {
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer3.jpg);
+}
+
+.identity {
+  padding: 15px 20px;
+}
+
+.identity h2, .identity p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.text-align {
+  text-align: center;
+  font-size: 44px;
+  font-family: "Raleway", sans-serif;
+}
+
+.news-letter {
+  display: flex;
+  justify-content: center;
+  column-gap: 27px;
+}
+
+.news-letter input {
+  width: 30%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.successful-note {
+  font-weight: 600;
+  text-align: center;
+  color: #4ba87d;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 80px 100px 80px;
+}
+
+.plan {
+  background-color: #4ba87d;
+  padding: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+.plan h1 {
+  font-size: 60px;
+}
+
+.plan button {
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-upper {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+}
+
+.footer-upper a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-lower {
+  padding: 30px 0px 0px 0px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-lower a {
+  text-decoration: none;
+  color: #000;
 }
