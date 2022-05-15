@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/10cbf98cac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,17 +27,20 @@
         </a>
       </div>
       <div>
-        <ul>
+        <ul class="menu">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Partners</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#partners">Partners</a></li>
           <li>
-            <a href="#">
+            <a href="./registration-form/registration-form.html">
               <button class="button button-1">Sign Up Free</button>
             </a>
           </li>
         </ul>
+        <li id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </li>
       </div>
     </nav>
     <!-- hero area -->
@@ -52,10 +56,10 @@
             your customers in just a few clicks.
           </p>
           <div class="buttons">
-            <a href="#"
+            <a href="./registration-form/registration-form.html"
               ><button class="button button-1 try-now">Try Now</button></a
             >
-            <a href="#"><button class="button button-2">Get A Demo</button></a>
+            <a href="./registration-form/registration-form.html"><button class="button button-2">Get A Demo</button></a>
           </div>
         </div>
       </div>
@@ -74,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="service-section">
+    <section id="services" class="service-section">
       <h1>Our Services</h1>
       <div class="cards">
         <div class="card">
@@ -117,7 +121,7 @@
         </div>
       </div>
     </section>
-    <section class="customers-section">
+    <section id="partners" class="customers-section">
       <h1>Our Customers</h1>
       <div class="customers">
         <div class="customer customer-one">
@@ -170,7 +174,9 @@
       <h1 class="text-align">
         Get started today!
       </h1>
-      <button class="button button-2 text-transform">Pick a plan</button>
+      <a href="./registration-form/registration-form.html">
+        <button class="button button-2 text-transform"> Pick a plan </button>
+      </a>
     </section>
     <footer>
       <div class="footer-upper">
@@ -184,10 +190,10 @@
           <a href="#">
             <p>Pricing</p>
           </a>
-          <a href="#">
+          <a href="#services">
             <p>Services</p>
           </a>
-          <a href="#">
+          <a href="#partners">
             <p>Partners</p>
           </a>
         </div>
@@ -237,6 +243,7 @@
           </a>
         </div>
       </div>
+      <hr>
       <div class="footer-lower">
         <small>NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights reserved.</small>
         <a href="#">

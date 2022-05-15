@@ -65,6 +65,10 @@ body {
   color: #000;
 }
 
+#hamburger {
+  display: none;
+}
+
 .hero-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,8 +120,9 @@ body {
 }
 
 .middle-part {
-  background-image: url(./images/recharge.jpg);
+  background-image: url(../images/recharge.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   width: 80%;
   height: 530px;
   display: flex;
@@ -128,24 +133,25 @@ body {
 
 .middle-part h1 {
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 60px;
   font-weight: 900;
   line-height: 80px;
 }
 
 .service-section {
-  background-color: #CAEAC7;
+  background-color: #caeac7;
   margin: 0;
   padding: 30px 0px;
 }
 
-.service-section h1, .customers-section h1 {
+.service-section h1,
+.customers-section h1 {
   margin: 0;
-  padding: 50px; 
+  padding: 50px;
   font-size: 60px;
   font-weight: 900;
-  text-align: center;  
+  text-align: center;
 }
 
 .cards {
@@ -170,7 +176,7 @@ body {
   font-size: 14px;
 }
 
-.details a{
+.details a {
   text-decoration: none;
   color: #4ba87d;
   letter-spacing: 0px;
@@ -178,11 +184,11 @@ body {
 }
 
 .customers-section {
-  padding: 20px;
+  padding: 50px;
 }
 
 .customers-section h1 {
-  padding-top: 120px;
+  padding: 80px;
 }
 
 .customers {
@@ -198,29 +204,33 @@ body {
   background-size: cover;
   width: 340px;
   height: 240px;
-  display:flex;
+  display: flex;
   align-items: flex-end;
   color: #fff;
-  margin: 0px 10px;
+  margin: 0px 15px;
 }
 
 .customer-one {
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer1.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)),
+    url(../images/customers/customer1.jpg);
 }
 
 .customer-two {
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer2.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)),
+    url(../images/customers/customer2.jpg);
 }
 
 .customer-three {
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)), url(./images/customers/customer3.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.4)),
+    url(../images/customers/customer3.jpg);
 }
 
 .identity {
   padding: 15px 20px;
 }
 
-.identity h2, .identity p {
+.identity h2,
+.identity p {
   padding: 0px;
   margin: 0px;
 }
@@ -231,10 +241,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.subscription {
+  padding: 50px 0px 0px 0px;
+}
+
 .news-letter {
   display: flex;
   justify-content: center;
-  column-gap: 27px;
+  column-gap: 30px;
 }
 
 .news-letter input {
@@ -249,11 +263,16 @@ body {
   color: #4ba87d;
 }
 
+.brands {
+  padding: 50px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
 .brand-logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 80px 100px 80px;
+  padding: 50px 80px 100px 80px;
 }
 
 .plan {
@@ -274,6 +293,7 @@ body {
 footer {
   padding: 50px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer-upper {
@@ -285,16 +305,103 @@ footer {
   color: #000;
   text-decoration: none;
   font-weight: 600;
+  font-size: 14px;
+}
+
+.footer-upper a:hover,
+.footer-lower a:hover {
+  text-decoration: underline;
+  color: #4ba87d;
 }
 
 .footer-lower {
   padding: 30px 0px 0px 0px;
   font-weight: 600;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-lower a {
   text-decoration: none;
   color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .fa-bars {
+    padding: 20px 0px;
+  }
+
+  .hero-area {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .middle-section {
+    padding: 50px 0px;
+  }
+
+  .middle-part h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .service-section h1 {
+    font-size: 56px;
+    padding: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .customers-section h1 {
+    font-size: 54px;
+    padding: 20px;
+  }
+
+  .customers {
+    display: grid;
+  }
+
+  .customer {
+    margin: 10px;
+  }
+
+  .text-align {
+    font-size: 34px;
+  }
+
+  .subscription {
+    padding: 35px 0px;
+  }
+
+  .brands {
+    padding: 30px 0px;
+  }
+
+  .brand-logo {
+    padding: 20px 0px;
+  }
+
+  .plan {
+    padding: 50px 0px;
+  }
+
+  .footer-upper {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+  }
+
+  .footer-lower {
+    display: grid;
+  }
 }
