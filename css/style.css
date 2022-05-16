@@ -373,6 +373,18 @@ footer {
     padding: 50px 0px;
   }
 
+  .button-3 {
+    margin-top: 10px;
+  }
+
+  .middle-section {
+    padding: 15px 5px;
+  }
+
+  .middle-part {
+    width: 90%;
+  }
+
   .middle-part h1,
   .customers-section h1,
   .service-section h1 {
@@ -380,6 +392,7 @@ footer {
     width: 100%;
     margin: auto;
     padding: 0;
+    line-height: 40px;
   }
 
   .cards {
