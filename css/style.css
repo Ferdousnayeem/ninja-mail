@@ -353,6 +353,7 @@ footer {
   }
 
   .buttons {
+    justify-content: space-around;
     padding: 0px;
   }
 
