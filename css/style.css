@@ -327,6 +327,10 @@ footer {
 }
 
 @media screen and (max-width: 1023px) {
+  body {
+    margin: auto;
+  }
+
   .menu {
     display: none;
   }
@@ -342,6 +346,22 @@ footer {
   .hero-area {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .text-area h1 {
+    font-size: 30px;
+  }
+
+  .buttons {
+    padding: 0px;
+  }
+
+  .button-1, .button-2, .button-3, .try-now {
+    padding: 8px;
+  }
+
+  .button-2 {
+    padding: 10px 8px;
   }
 
   .middle-section {
@@ -397,13 +417,23 @@ footer {
     padding: 10px;
   }
 
+  .news-letter {
+    display: grid;
+    gap: 10px;
+  }
+
+  .news-letter input {
+    width: 100%;
+    font-size: 20px;
+  }
+
   .plan {
     padding: 50px 0px;
   }
 
   .footer-upper {
     display: grid;
-    grid-template-columns: 1, 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer-lower {
