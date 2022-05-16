@@ -353,11 +353,15 @@ footer {
   }
 
   .buttons {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     padding: 0px;
   }
 
-  .button-1, .button-2, .button-3, .try-now {
+  .button-1,
+  .button-2,
+  .button-3,
+  .try-now {
     padding: 8px;
   }
 
@@ -369,7 +373,9 @@ footer {
     padding: 50px 0px;
   }
 
-  .middle-part h1, .customers-section h1, .service-section h1 {
+  .middle-part h1,
+  .customers-section h1,
+  .service-section h1 {
     font-size: 32px;
     width: 100%;
     margin: auto;
@@ -384,7 +390,8 @@ footer {
     display: grid;
   }
 
-  .customer, .card {
+  .customer,
+  .card {
     width: 250px;
     margin: 10px;
   }
@@ -405,7 +412,7 @@ footer {
     display: grid;
     padding: 20px 0px;
   }
-  
+
   .brand-logo img {
     margin: auto;
     padding: 10px;
